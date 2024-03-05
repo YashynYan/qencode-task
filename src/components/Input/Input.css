@@ -1,0 +1,37 @@
+.input {
+  padding: 14px 12px;
+  border: 1.2px solid var(--color-grey);
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-wrapper {
+  position: relative;
+  svg {
+    position: absolute;
+    top: 17px;
+    right: 16px;
+    cursor: pointer;
+  }
+}
+
+.input-block {
+  text-align: start;
+}
+
+.input::placeholder {
+  color: var(--color-grey-200);
+}
+
+.error-block {
+  color: red;
+  text-align: start;
+}
+
+.label {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}

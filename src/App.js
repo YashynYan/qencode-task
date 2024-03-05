@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import "./App.css";
+import { CreateNewPassword, Login } from "./domains";
+import { LoginProvider, SetNewPasswordProvider } from "./providers";
+import { ForgotPassword } from "./domains/ForgotPassword/ForgotPassword";
+import { PasswordResetProvider } from "./providers/PasswordResetProvider";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <LoginProvider>
+        <Login />
+      </LoginProvider>
+    ),
+  },
+  {
+    path: "/forgot-password",
+    element: (
+      <PasswordResetProvider>
+        <ForgotPassword />
+      </PasswordResetProvider>
+    ),
+  },
+  {
+    path: "/create-new-password",
+    element: (
+      <SetNewPasswordProvider>
+        <CreateNewPassword />
+      </SetNewPasswordProvider>
+    ),
+  },
+]);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />;
 }
 
 export default App;

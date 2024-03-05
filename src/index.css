@@ -1,13 +1,33 @@
+:root {
+  --color-gra-900: #1a1919;
+  --color-gra-800: #060e1e;
+  --color-gra-700: #383838;
+  --color-white: #fff;
+  --color-grey: #d3d8dc;
+  --color-grey-100: #bec5cc;
+  --color-grey-200: #a1abb5;
+  --color-blue: #316fea;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+* {
+  font-family: "Basis Grotesque Pro";
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: var(--color-gra-900);
 }

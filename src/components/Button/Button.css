@@ -1,0 +1,22 @@
+.button {
+  padding: 13px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.button-primary {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border: none;
+}
+
+.button-light {
+  background-color: var(--color-white);
+  color: var(--color-gra-800);
+  border: 1.2px solid var(--color-grey);
+}
