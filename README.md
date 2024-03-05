@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# About Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is test task for Qencode
+
+1. Pull code from main
+2. Run `npm i`
+3. Run `npm run start`
+4. Open `localhost:3000` in your browser
+
+## Available routes
+
+1. `http://localhost:3000/` - root login screen
+2. `http://localhost:3000/forgot-password` - forgot password screen
+3. `http://localhost:3000/create-new-password` - set new password screen. We assume that we will get to tis screen from 'Reset password email' were secret and token will be provided
 
 ## Available Scripts
 
